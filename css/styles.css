@@ -444,21 +444,15 @@ header.wrap{display:none;} /* header rimosso, logo in hero */
 
 #download.bg-full{min-height:401px;}
 
-#podcast.bg-full{min-height:262px;}
+#podcast.bg-full{min-height:auto;}
 
-#media.bg-full{min-height:258px;}
+#media.bg-full{min-height:auto;}
 
 #gaming.bg-full{min-height:389px;}
 
 #contattaci.bg-full{min-height:249px;}
 
 @media (min-width: 980px){
-  #eventi .inner,
-  #podcast .inner,
-  #media .inner,
-  #contattaci .inner{
-    padding-left:498px;
-  }
   #eventi .next .cta,
   #podcast .btn,
   #media .btn,
@@ -502,7 +496,7 @@ header.wrap{display:none;} /* header rimosso, logo in hero */
 
 #media .media-box{display:block;}
 #media .btn{margin-top:14px;display:inline-flex;}
-#podcast .btn{margin-top:14px;display:inline-flex;}
+#podcast .btn{margin-top:10px;display:inline-flex;padding:8px 12px;font-size:11px;}
 #contatti .btn{background:var(--ink);color:#fff;border:none;padding:12px 18px;border-radius:999px;font-weight:700;}
 
 details summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;font-weight:700;}
@@ -596,7 +590,10 @@ body{padding-top:0;margin-top:0;}
 /* remove critical gap between sections */
 .hero{margin-bottom:0;padding-bottom:0;}
 #progetto{margin-bottom:0;padding-bottom:0;margin-top:0;padding-top:0;}
-#progetto .inner{padding:40px 0 40px !important;}
+#progetto .inner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 #eventi{margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;}
 #infografiche{margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;}
 #podcast{margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0;}
@@ -622,7 +619,7 @@ body{padding-top:0;margin-top:0;}
 
 /* Progetto right grid + icons visible */
 .progetto-grid{gap:26px;}
-.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;align-items:start;margin-bottom:0;}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;align-items:start;margin-bottom:0;}
 .feature{display:flex;gap:10px;align-items:flex-start;}
 .feature img{width:20px;height:20px;flex:0 0 auto;display:block;opacity:1;filter:none;}
 .feature h3{margin:0 0 4px 0;font-size:15px;line-height:1.3;}
@@ -656,6 +653,10 @@ body{padding-top:0;margin-top:0;}
 /* Contattaci title blue + bigger CTA */
 #contatti h2 .o{color:var(--ink2) !important;}
 #contatti .btn{background:var(--ink);color:#fff;padding:14px 20px;font-size:16px;border-radius:999px;}
+
+.section-title-padding {
+  padding-left: 100px;
+}
 
 /* Footer spacing */
 .footer-logos{padding-bottom:22px;}
